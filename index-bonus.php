@@ -2,6 +2,7 @@
 
 if ($_POST) {
 echo 'Ci sono elementi in $_POST';
+var_dump ($_POST);
 } else {
 echo 'Non ci sono elementi in $_POST';
 
@@ -16,18 +17,18 @@ echo 'Non ci sono elementi in $_POST';
 </head>
 <body>
 
-  <!-- <form class="" action="index-bonus.php" method="post">
+  <form class="" action="index-bonus.php" method="post">
    <input type="text" name="nome" value="">
-   <button type="submit" name="modulo"></button>
-  </form> -->
+   <button type="submit" name="modulo">clicca qui</button>
+  </form>
 
 
   <?php
 
-  // if (isset($_POST['modulo'])) {
-  //   echo "é stato effettuato il submit";
-  //   echo "Nome passato:{$_POST['nome']} "
-  // }
+  if (isset($_POST['modulo'])) {
+    echo "é stato effettuato il submit";
+    echo "Nome passato:{$_POST['nome']} ";
+  }
 
   $text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
