@@ -36,3 +36,18 @@ foreach ($array as $el) {
   $cont++ ;
 }
 ?>
+
+<ul>
+<?php
+$array = array("ciao","come","stai?");
+foreach ($array as $el) {?>
+  <li><?php echo $el ?></li>
+<?php } ?>
+</ul>
+
+<ul>
+<?php
+for ($i=0; $i<90 ; $i++) {?>
+  <li><?php echo "Posizione". $i ?></li>
+<?php } ?>
+</ul>
