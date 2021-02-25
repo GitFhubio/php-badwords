@@ -14,13 +14,12 @@
   //
   //   }
   $text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-  $posizioneParola = strpos ($text, 'alfredo');
-  var_dump($posizioneParola);
+
   $newText = str_replace($_GET["badword"], "***", "$text");
   // var_dump(!$_GET);
   ?>
   <div>
-  <?php if (!$_GET || strpos($text, $_GET["badword"])==false) { ?>
+  <?php if (!$_GET) { ?>
     <h1>Testo originale</h1>
     <p><?php echo $text; ?></p>
   <?php } else { ?>
