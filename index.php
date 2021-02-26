@@ -6,6 +6,13 @@
 </head>
 <body>
   <?php
+  // Creare una variabile con un paragrafo di testo. Usate pure il Lorem Ipsum.
+  // Scrivere a schermo la lunghezza del paragrafo.
+  // Infine, visualizzare il paragrafo sostituendo la badword passata in GET con tre *.
+  // Quindi ricapitolando, dovete sicuramente usare:
+  // il $_GET
+  // qualcosa (una funzione) per calcolare la lunghezza di una stringa
+  // qualcos'altro per sostituire la badwords
 
   // if ($_GET) {
   //   echo 'Ci sono elementi in get';
